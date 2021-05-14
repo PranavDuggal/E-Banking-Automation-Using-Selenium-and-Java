@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [InetBankingV1]">
+  <listeners>
+    <listener class-name="com.inetbanking.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="BankingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.inetbanking.testCases.TC_Withdraw_007">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Amountwithdraw"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_Withdraw_007 -->
+      <class name="com.inetbanking.testCases.TC_AddAccountTest_005">
+        <methods>
+          <include name="addAccount"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_AddAccountTest_005 -->
+      <class name="com.inetbanking.testCases.TC_Deposits_006">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Amountdeposits"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_Deposits_006 -->
+      <class name="com.inetbanking.testCases.TC_BalanceEnquiry_009">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Balenceenquiry"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_BalanceEnquiry_009 -->
+      <class name="com.inetbanking.testCases.TC_AddCustomerTest_003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="addNewCustomer"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_AddCustomerTest_003 -->
+      <class name="com.inetbanking.testCases.TC_EditCustomerTest_004">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="editCustomer"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_EditCustomerTest_004 -->
+      <class name="com.inetbanking.testCases.TC_FundTransfer_008">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Fundtransfer"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_FundTransfer_008 -->
+      <class name="com.inetbanking.testCases.TC_LoginDDT_002">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loginDDT" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_LoginDDT_002 -->
+    </classes>
+  </test> <!-- BankingApp Test(failed) -->
+</suite> <!-- Failed suite [InetBankingV1] -->
